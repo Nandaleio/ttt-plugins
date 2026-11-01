@@ -1,0 +1,20 @@
+{
+  "name": "devcontainer",
+  "displayName": "Dev Containers",
+  "description": "Build, run and open a shell in devcontainer.json projects using Docker or Podman",
+  "version": "0.1.0",
+  "author": "eugenioenko",
+  "entry": "init.lua",
+  "api": 1,
+  "permissions": {
+    "panel.sidebar": true,
+    "commands": true,
+    "editor.read": true,
+    "fs.read": true,
+    "settings": true,
+    "settings_keys": ["devcontainer.runtime"],
+    "system.env": true,
+    "system.exec": ["docker", "podman"],
+    "terminal.control": true
+  }
+}
